@@ -51,7 +51,7 @@ See the Portainer Guide in our repository for stack deployment.
 *   **Architecture**: x86_64 (amd64), arm64
 
 ## Support
-Email: services@l1apps.com
+Email: services@domain
 
 ## License
 MIT License. Copyright (c) 2024 Level 1 Apps.

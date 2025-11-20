@@ -579,11 +579,21 @@ export const RetroPong: React.FC<RetroPongProps> = ({ settings, onUpdateSettings
       const updateSize = () => {
           if (containerRef.current && canvasRef.current) {
              const { clientWidth, clientHeight } = containerRef.current;
+             
+             // Padding for monitor feel and better centering
+             const paddingX = 40; 
+             const paddingY = 40;
+             const availableWidth = Math.max(0, clientWidth - paddingX);
+             const availableHeight = Math.max(0, clientHeight - paddingY);
+
              const aspect = GAME_WIDTH / GAME_HEIGHT;
-             let w = clientWidth;
+             let w = availableWidth;
              let h = w / aspect;
-             if (h > clientHeight) { h = clientHeight; w = h * aspect; }
+             
+             if (h > availableHeight) { h = availableHeight; w = h * aspect; }
+             
              setDisplaySize({ width: w, height: h });
+             
              setTimeout(() => {
                  if (canvasRef.current) {
                      const rect = canvasRef.current.getBoundingClientRect();
@@ -702,6 +712,16 @@ export const RetroPong: React.FC<RetroPongProps> = ({ settings, onUpdateSettings
             </Button>
 
             <Button onClick={onSettingsClick} variant="secondary" size={t.btn as any} themeColor={fgColor} className={t.btnText}>CONFIG</Button>
+          </div>
+
+          {/* Support Link */}
+          <div className="absolute bottom-8 right-8 opacity-50 hover:opacity-100 transition-opacity">
+            <a href="mailto:services@l1apps.com" title="Support" style={{ color: fgColor }}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+            </a>
           </div>
         </div>
       )}

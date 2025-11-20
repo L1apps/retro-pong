@@ -2,7 +2,7 @@ name: retro-pong
 
 services:
   retro-pong:
-    build: .
+    image: l1apps/retro-pong:latest
     container_name: retro-pong
     ports:
       - "2700:80"

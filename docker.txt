@@ -1,0 +1,2 @@
+# DEPRECATED
+# Please use the file named 'Dockerfile' (no extension) for building this project.

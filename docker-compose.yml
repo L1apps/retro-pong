@@ -1,0 +1,9 @@
+name: retro-pong
+
+services:
+  retro-pong:
+    build: .
+    container_name: retro-pong
+    ports:
+      - "2700:80"
+    restart: unless-stopped

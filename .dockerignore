@@ -1,0 +1,22 @@
+# Git
+.git
+.gitignore
+
+# Docker
+docker-compose.yml
+.dockerignore
+Dockerfile
+docker.txt
+dockerfile.txt
+
+# Documentation
+README.md
+DOCKER_HUB.md
+LICENSE.txt
+
+# System
+.DS_Store
+node_modules
+
+# App Metadata
+metadata.json

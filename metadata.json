@@ -1,0 +1,5 @@
+{
+  "name": "Retro Pong",
+  "description": "A classic, single-player Pong game featuring retro CRT aesthetics, monochrome themes, dynamic physics, and adjustable difficulty.",
+  "requestFramePermissions": []
+}

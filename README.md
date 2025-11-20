@@ -50,7 +50,7 @@ For detailed instructions on deploying via Portainer Stacks, please see PORTAINE
 ## 📧 Support
 
 For support or inquiries, please contact us at:
-services@l1apps.com
+services@domain
 
 ## 📜 License
 

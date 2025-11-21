@@ -6,8 +6,9 @@
 ![Docker Image Version](https://img.shields.io/docker/v/l1apps/retro-pong?label=docker%20hub)
 ![Docker Pulls](https://img.shields.io/docker/pulls/l1apps/retro-pong)
 
-**Docker Hub Repository:** https://hub.docker.com/r/l1apps/retro-pong
-**Website:** https://l1apps.com
+**Docker Hub Repository:** [https://hub.docker.com/r/l1apps/retro-pong](https://hub.docker.com/r/l1apps/retro-pong)
+**GitHub Container Registry:** ghcr.io/l1apps/retro-pong:latest
+**Website:** [https://l1apps.com](https://l1apps.com)
 
 ## 🎮 Features
 
@@ -21,23 +22,28 @@
 
 ## 🚀 Quick Start
 
-Use the pre-built image from Docker Hub to get the game running instantly.
+Use the pre-built image from Docker Hub or GitHub Container Registry to get the game running instantly.
 
 ### Option 1: Docker CLI
 
-Run the game with a single command:
+Run from Docker Hub:
 
     docker run -d -p 2700:80 --name retro-pong --restart unless-stopped l1apps/retro-pong:latest
 
-Open your browser and go to http://localhost:2700.
+Or run from GitHub Container Registry:
+
+    docker run -d -p 2700:80 --name retro-pong --restart unless-stopped ghcr.io/l1apps/retro-pong:latest
+
+Open your browser and go to `http://localhost:2700`.
 
 ### Option 2: Docker Compose
 
-Create a docker-compose.yml file with the following content and run docker compose up -d:
+Create a `docker-compose.yml` file with the following content and run `docker compose up -d`:
 
     services:
       retro-pong:
         image: l1apps/retro-pong:latest
+        # Alternative: ghcr.io/l1apps/retro-pong:latest
         container_name: retro-pong
         ports:
           - "2700:80"
@@ -45,12 +51,12 @@ Create a docker-compose.yml file with the following content and run docker compo
 
 ### Option 3: Portainer
 
-For detailed instructions on deploying via Portainer Stacks, please see PORTAINER.md.
+For detailed instructions on deploying via Portainer Stacks, please see `PORTAINER.md`.
 
 ## 📧 Support
 
-For support or inquiries, please contact us at:
-services@domain
+For support or inquiries, please visit our website:
+[https://l1apps.com](https://l1apps.com)
 
 ## 📜 License
 

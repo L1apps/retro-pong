@@ -3,6 +3,7 @@ name: retro-pong
 services:
   retro-pong:
     image: l1apps/retro-pong:latest
+    # Alternative: ghcr.io/l1apps/retro-pong:latest
     container_name: retro-pong
     ports:
       - "2700:80"

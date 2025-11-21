@@ -24,6 +24,8 @@ This guide will help you deploy **Retro Pong** using Portainer's "Stacks" featur
           - "2700:80"
         restart: unless-stopped
 
+    > **Alternative Image Source:** You can also use the GitHub Container Registry image by replacing `image: l1apps/retro-pong:latest` with `image: ghcr.io/l1apps/retro-pong:latest`.
+
     > **Note:** You can change the port mapping (2700:80) if port 2700 is already in use on your server. For example, use 8080:80 to access the game on port 8080.
 
 7.  Scroll down and click the blue **Deploy the stack** button.

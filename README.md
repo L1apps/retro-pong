@@ -20,6 +20,8 @@
 - **Demo Mode**: Sit back and watch the AI play against itself with randomized visual effects.
 - **Accessibility**: Adjustable text scaling (Small, Medium, Large) for better readability.
 
+![Retro-Pong](https://l1apps.com/?attachment_id=28 "Retro-Pong")
+
 ## 🚀 Quick Start
 
 Use the pre-built image from Docker Hub or GitHub Container Registry to get the game running instantly.

@@ -6,6 +6,13 @@ Retro Pong is a lightweight, web-based recreation of the classic arcade tennis g
 Brought to you by **Level 1 Apps (L1Apps)**.
 Website: [https://l1apps.com](https://l1apps.com)
 
+![Docker Image Version](https://img.shields.io/docker/v/l1apps/retro-pong?label=Docker%20Image&style=flat-square)
+![Docker Pulls](https://img.shields.io/docker/pulls/l1apps/retro-pong?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+
+![Retro Pong Screenshot](https://l1apps.com/retro-pong-screenshot/)
+
+
 ## Features
 *   **Single Player vs AI**: Challenge a dynamic computer opponent with adaptive difficulty.
 *   **CRT Effects**: Immersive scanlines, curvature, and static noise simulation.

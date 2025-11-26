@@ -1,47 +1,68 @@
-# Retro Pong 🎮
+# Retro Pong - Docker Edition
 
-A modern reimagining of the classic Pong experience — complete with CRT effects, dynamic physics, adaptive AI, and retro monochrome themes. Lightweight, fast, and deployable anywhere with Docker.
+## Overview
+Retro Pong is a lightweight, web-based recreation of the classic arcade tennis game, wrapped in a nostalgic CRT aesthetic. Built with React, TypeScript, and Vite, this Docker image serves the optimized production build using a high-performance Nginx server.
 
-![Docker Image Version](https://img.shields.io/docker/v/l1apps/retro-pong?label=Docker%20Image&style=flat-square)
-![Docker Pulls](https://img.shields.io/docker/pulls/l1apps/retro-pong?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+Brought to you by **Level 1 Apps (L1Apps)**.
+Website: [https://l1apps.com](https://l1apps.com)
 
-![Retro Pong Screenshot](https://l1apps.com/retro-pong-screenshot/)
+## Features
+*   **Single Player vs AI**: Challenge a dynamic computer opponent with adaptive difficulty.
+*   **CRT Effects**: Immersive scanlines, curvature, and static noise simulation.
+*   **Theming**: Switch between Classic B&W, Green Phosphor, and Amber terminals.
+*   **Demo Mode**: Screensaver-style self-playing mode with randomized effects.
+*   **Responsive**: Seamless gameplay in both Portrait and Landscape orientations.
+*   **Accessibility**: High-contrast visuals and adjustable text sizes (Small, Medium, Large).
 
----
+## How to Use
 
-## ✨ Features
+### 🐳 Docker CLI
+The fastest way to get started is using the Docker command line.
 
-- **Retro Monochrome Themes**  
-  Classic Black & White, Terminal Green, and Amber.
+From Docker Hub:
 
-- **CRT Simulation**  
-  Optional screen curvature, flicker, scanlines, and static noise.
+    docker run -d \
+      -p 2700:80 \
+      --name retro-pong \
+      --restart unless-stopped \
+      l1apps/retro-pong:latest
 
-- **Dynamic Physics**  
-  Ball speed and spin adjust based on paddle impact angle.
+From GitHub Container Registry:
 
-- **Adaptive AI**  
-  Choose from Easy, Medium, and Hard modes.
+    docker run -d \
+      -p 2700:80 \
+      --name retro-pong \
+      --restart unless-stopped \
+      ghcr.io/l1apps/retro-pong:latest
 
-- **Two Orientations**  
-  Landscape or Portrait (perfect for vertical screens).
+Navigate to `http://localhost:2700` to play.
 
-- **Demo Mode**  
-  Watch AI vs. AI with randomized visual effects.
+### 📦 Docker Compose
+Create a `docker-compose.yml` file:
 
-- **Accessibility Options**  
-  Adjustable text scaling (Small, Medium, Large).
+    services:
+      retro-pong:
+        image: l1apps/retro-pong:latest
+        # Alternative: ghcr.io/l1apps/retro-pong:latest
+        container_name: retro-pong
+        ports:
+          - "2700:80"
+        restart: unless-stopped
 
----
+Run the stack:
 
-## 🚀 Getting Started
+    docker compose up -d
 
-Retro Pong runs anywhere Docker runs — including Linux, Windows, macOS, NAS devices, and small home servers.
+### 🚢 Portainer
+See the Portainer Guide in our repository for stack deployment.
 
-### **Option 1: Docker CLI**
+## Technical Details
+*   **Port**: 80 (Internal)
+*   **Base Image**: Nginx Alpine
+*   **Architecture**: x86_64 (amd64), arm64
 
-Run from Docker Hub:
+## Support
+Please visit our website for support: [https://l1apps.com](https://l1apps.com)
 
-```bash
-docker run -d -p 2700:80 --name retro-pong --restart unless-stopped l1apps/retro-pong:latest
+## License
+MIT License. Copyright (c) 2024 Level 1 Apps.

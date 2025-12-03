@@ -10,7 +10,7 @@ Website: [https://l1apps.com](https://l1apps.com)
 ![Docker Pulls](https://img.shields.io/docker/pulls/l1apps/retro-pong?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
 
-![Retro Pong Screenshot](https://l1apps.com/retro-pong-screenshot/)
+![Retro Pong Screenshot](https://l1apps.com/retro-pong/retro-pong-screenshot/)
 
 
 ## Features
